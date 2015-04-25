@@ -28,9 +28,40 @@
   
   <div class="container">
   <h2> Edit a ToDo</h2>
-  	<p> Auf dieser Seite können Sie in einer zukünftigen Version ein bereits erstelltes ToDo editieren.</p>
+  	<div class="form-group">
+  		<label for="choose">Choose a TODO:</label>
+  		 <p>
+		 <div class="dropdown">
+  			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" arua-expanded="true">choose
+  			<span class="caret"></span>
+			</button>
+  			<ul class="dropdown-menu" role="menu">
+    					<li role="presentation"><a role="menuitem" tabindex="-1"  href="#">Collect data</a></li>
+    					<li role="presentation"><a role="menuitem" tabindex="-1"  href="#">Data analysis</a></li>
+    					<li role="presentation"><a role="menuitem" tabindex="-1"  href="#">Cutting</a></li>
+			</ul>
+		</div>
+		</p>
+
+		<div class="form-group">
+    			<label for="desc">Description:</label>
+      			<textarea class="form-control" rows="3" placeholder="Enter new description with less than 160 words"></textarea>
+    		</div>
+    
+    		<div class="form-group">
+      			<label for="deadl">Deadline:</label>
+      			<input type="text" class="form-control" id="deadl" placeholder="Enter new deadline">
+				
+    		</div>
+		<p></p>
+			<label>Progress:</label>
+    		<div class="input-group">
+      			<input type="text" class="form-control" placeholder="Enter new progress percentage" aria-describedby="basic-addon">
+				<span class="input-group-addon" id="basic-addon">%</span>
+			</div>
+		<p></p>
+    		<button type="submit" class="btn btn-default">Save</button>
+	</div>
   </div>
   </body>
 </html>
-
-	
