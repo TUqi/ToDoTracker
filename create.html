@@ -28,32 +28,29 @@
   
 	<div class="container">
   	<h2>Create a ToDo</h2>
-  	<form role="form">
+  	
   		<div class="form-group">
       			<label for="name">Name:</label>
       			<input type="text" class="form-control" id="name" placeholder="Enter ToDo name">
     		</div>
-    
     		<div class="form-group">
-    			<label for="desc">Description:</label>
+    			<label>Description:</label>
       			<textarea class="form-control" rows="3" placeholder="Enter description with less than 160 words"></textarea>
     		</div>
-    
+   				<label>Deadline:</label>
     		<div class="form-group">
-      			<label for="deadl">Deadline:</label>
-      			<input type="text" class="form-control" id="deadl" placeholder="Enter deadline">
+      			<input type="text" class="form-control" placeholder="Enterdeadline">
     		</div>
-    
-    		<div class="form-group">
-      			<label for="progss">Progress:</label>
-      			<input type="text" class="form-control" id="progss" placeholder="Enter progress percentage">
-		</div>
-    
-    		<button type="submit" class="btn btn-default">Submit</button>
-    
-  	</form>
-	</div>
-           
+			<p></p>
+				<label>Progress:</label>
+    		<div class="input-group">
+      			<input type="text" class="form-control" placeholder="Enter progress percentage" aria-describedby="basic-addon">
+				<span class="input-group-addon" id="basic-addon">%</span>
+			</div>
+			<p></p>
+			<button type="submit" class="btn btn-default">Submit</button>
+   	</div>
+	
   </body>
 </html>
 
