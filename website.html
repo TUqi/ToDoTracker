@@ -13,17 +13,22 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
    			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
    			<a class="navbar-brand" href="#">ToDo-Tracker</a>
    			</div>
- 			<div>
+ 			<div class="collapse navbar-collapse" id="myNavbar">
        			<ul class="nav navbar-nav">
 					<li class="active"><a href="website.html">Overview</a></li>
           			<li><a href="create.html">Create</a></li>
           			<li><a href="edit.html">Edit</a></li>
           			<li><a href="impressum.html">Contact</a></li>
        			</ul>
-      			</div>
-    		</div>
+      		</div>
+    	</div>
   	</nav>
   	
   <div class="container">
@@ -34,7 +39,6 @@
 			<th>ToDo-Name</th>
         		<th>ToDo-Description</th>
         		<th>Deadline</th>
-        		<th>Progress</th>
 				<th>Actions</th>
 	      	</tr>
     	</thead>
@@ -43,50 +47,55 @@
         		<td>Collect data</td>
 			<td>searching for relevant information from different sources</td>
         		<td>27.04.16</td>
-        		<td>
-        			<div class="progress">
-  				<div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">40%</div>
-  				<div class="progress-bar progress-bar-danger" role="progressbar" style="width:60%"></div>
-			</td>
-			<td>
-				<div class="btn-group">
-  				<a href="edit.html"><button type="button" class="btn btn-default">edit</button></a>
-  				<a href="delete.html"><button type="button" class="btn btn-default">delete</button></a>
-  				</div>
-  			</td>
-			
+        			<td>
+				<form style="display: inline" action="edit.html" method="get">
+					<button>edit</button>
+				</form>
+					
+  				<form style="display: inline" action="delete.html" method="get">
+					<button>delete</button>
+				</form>
+  				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">50%</div>
+					<div class="progress-bar progress-bar-danger" role="progressbar" style="width:50%"></div>
+  				</div>			
+				</td>
       		</tr>
       		<tr>
         		<td>Data analysis</td>
 			<td>analysing the collected data and process its usage</td>
         		<td>27.04.16</td>
-        		<td>
-				<div class="progress">
-  				<div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">50%</div>
-  				<div class="progress-bar progress-bar-danger" role="progressbar" style="width:50%"></div>
-  				</div>
-			</td>
-			<td>
-				<div class="btn-group">
-   				<a href="edit.html"><button type="button" class="btn btn-default">edit</button></a>
-  				<a href="delete.html"><button type="button" class="btn btn-default">delete</button></a>
-  			</td>
+        			<td>
+				<form style="display: inline" action="edit.html" method="get">
+					<button>edit</button>
+				</form>
+					
+  				<form style="display: inline" action="delete.html" method="get">
+					<button>delete</button>
+				</form>
+  				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">50%</div>
+					<div class="progress-bar progress-bar-danger" role="progressbar" style="width:50%"></div>
+  				</div>			
+				</td>
       		</tr>
       		<tr>
         		<td>Cutting</td>
 			<td>prioritize the information and cut out useless information or put them on halt</td>
 			<td>27.04.16</td>
         		<td>
-				<div class="progress">
-  				<div class="progress-bar progress-bar-success" role="progressbar" style="width:80%">80%</div>
-  				<div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
-  				</div>
-  			</td>
-			<td>
-				<div class="btn-group">
-   				<a href="edit.html"><button type="button" class="btn btn-default">edit</button></a>
-  				<a href="delete.html"><button type="button" class="btn btn-default">delete</button></a>
-  			</td>
+				<form style="display: inline" action="edit.html" method="get">
+					<button>edit</button>
+				</form>
+					
+  				<form style="display: inline" action="delete.html" method="get">
+					<button>delete</button>
+				</form>
+  				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">50%</div>
+					<div class="progress-bar progress-bar-danger" role="progressbar" style="width:50%"></div>
+  				</div>			
+				</td>
       		</tr>
     	  </tbody>
   	</table>
